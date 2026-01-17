@@ -11,12 +11,16 @@ Servlet で現在時刻を取得し、JSP に渡して表示するシンプル�
 - 画面中央へのレイアウト
 - CSS を使った簡単な装飾（キラキラアニメーション）
 
+## デモ
+![Image](https://github.com/user-attachments/assets/52eaa3c2-964b-4b4f-b650-a7c2fbe05b16)
+
 ## 使用技術
+```
 - Java
 - Servlet / JSP
 - HTML / CSS
 - Tomcat
-
+```
 ## ディレクトリ構成
 ```
 HelloTime/
@@ -38,6 +42,6 @@ HelloTime/
 ## 実行方法
 1. プロジェクトを IDE にインポート  
 2. Tomcat を起動  
-3. `http://localhost:8080/プロジェクト名/HelloServlet?action=time` にアクセス  
+3. `http://localhost:8080/HelloTime/HelloServlet?action=time` にアクセス  
 
 練習用として作成したプロジェクトです。
