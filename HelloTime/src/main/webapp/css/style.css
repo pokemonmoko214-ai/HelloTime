@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*index.jsp*/
+.index-page {
+
+	display: flex;
+	justify-content: center; /* 横中央 */
+	align-items: center; /* 縦中央 */
+	height: 100vh; /* 画面全体を高さにする */
+	margin: 0;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+/*Time.jsp*/
+.time-page{
+display: flex;
+	justify-content: center; /* 横中央 */
+	align-items: center; /* 縦中央 */
+	height: 100vh; /* 画面全体を高さにする */
+	margin: 0;
+	/* 文字の基本スタイル */
+	font-size: 48px;
+	font-weight: bold;
+	color: #ffb7ef; /* パステルピンク */
+	letter-spacing: 2px;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.clock {
+	/* 光るグラデーション*/
+	background: linear-gradient(90deg, #ffb7ef, #c7f0ff, #ffe8a8, #ffb7ef);
+	-webkit-background-clip: text;
+	color: transparent;
+	background-size: 200% auto;  
+	/* ふわっと光るアニメーション */
+	animation: sparkle 3s infinite linear;
+	display: inline-block;
+	
+}
+
+.clock:hover {
+    text-shadow: 
+        0 0 10px #ffb7ef,
+        0 0 20px #ffb7ef,
+        0 0 30px #c7f0ff,
+        0 0 40px #ffe8a8;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+color: #FFFFFF;
+}
+
+/* キラキラの動き */
+@keyframes sparkle { 
+0% {background-position: 0% }
+100% {background-position: 200% }
+}
